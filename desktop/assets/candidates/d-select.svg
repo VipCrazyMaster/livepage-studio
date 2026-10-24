@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bgD" x1="0" y1="0" x2="0.32" y2="1">
+      <stop offset="0" stop-color="#1cb5a4"/>
+      <stop offset="0.5" stop-color="#0f8375"/>
+      <stop offset="1" stop-color="#085049"/>
+    </linearGradient>
+    <linearGradient id="sheenD" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.24"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="48" y="48" width="928" height="928" rx="224" fill="url(#bgD)"/>
+  <rect x="48" y="48" width="928" height="928" rx="224" fill="url(#sheenD)"/>
+  <rect x="48" y="48" width="928" height="928" rx="224" fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-width="8"/>
+
+  <rect x="286" y="238" width="452" height="552" rx="44" fill="#0b3f3a" opacity="0.35"/>
+  <rect x="276" y="226" width="452" height="552" rx="44" fill="#f7f2e6"/>
+
+  <g fill="#cfc8b8">
+    <rect x="336" y="300" width="214" height="28" rx="14"/>
+    <rect x="336" y="352" width="132" height="22" rx="11" fill="#dcd5c6"/>
+  </g>
+
+  <rect x="336" y="418" width="332" height="150" rx="20" fill="#e8e2d4"/>
+  <g fill="#9fb0a7">
+    <rect x="360" y="446" width="252" height="18" rx="9"/>
+    <rect x="360" y="478" width="272" height="18" rx="9"/>
+    <rect x="360" y="510" width="196" height="18" rx="9"/>
+  </g>
+
+  <rect x="316" y="398" width="372" height="190" rx="30" fill="none" stroke="#0e1412" stroke-opacity="0.28" stroke-width="10"/>
+  <rect x="316" y="398" width="372" height="190" rx="30" fill="none" stroke="#7ef5e9" stroke-width="10"/>
+  <g fill="#7ef5e9" stroke="#0b3f3a" stroke-width="8">
+    <rect x="292" y="374" width="52" height="52" rx="14"/>
+    <rect x="660" y="374" width="52" height="52" rx="14"/>
+    <rect x="292" y="560" width="52" height="52" rx="14"/>
+    <rect x="660" y="560" width="52" height="52" rx="14"/>
+  </g>
+
+  <g fill="#cfc8b8">
+    <rect x="336" y="628" width="290" height="18" rx="9"/>
+    <rect x="336" y="662" width="212" height="18" rx="9"/>
+  </g>
+
+  <g>
+    <path d="M596 566 L596 716 L640 674 L668 736 L702 719 L674 658 L732 655 Z" fill="#1b2420" opacity="0.22" transform="translate(8 10)"/>
+    <path d="M596 566 L596 716 L640 674 L668 736 L702 719 L674 658 L732 655 Z" fill="#ffffff" stroke="#0e1412" stroke-width="14" stroke-linejoin="round"/>
+  </g>
+</svg>

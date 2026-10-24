@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bgH" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#14332d"/>
+      <stop offset="1" stop-color="#060e0c"/>
+    </linearGradient>
+    <linearGradient id="railH" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7ef5e9"/>
+      <stop offset="1" stop-color="#17b3a2"/>
+    </linearGradient>
+  </defs>
+  <rect x="48" y="48" width="928" height="928" rx="224" fill="url(#bgH)"/>
+  <rect x="48" y="48" width="928" height="928" rx="224" fill="none" stroke="#ffffff" stroke-opacity="0.14" stroke-width="8"/>
+
+  <rect x="256" y="256" width="512" height="512" rx="96" fill="none" stroke="#7ef5e9" stroke-opacity="0.28" stroke-width="10" stroke-dasharray="26 26"/>
+
+  <g stroke="url(#railH)" stroke-width="34" stroke-linecap="round">
+    <line x1="352" y1="392" x2="640" y2="392"/>
+    <line x1="352" y1="470" x2="560" y2="470"/>
+    <line x1="352" y1="548" x2="612" y2="548"/>
+    <line x1="352" y1="626" x2="480" y2="626"/>
+  </g>
+
+  <g>
+    <path d="M604 540 L604 700 L648 656 L676 720 L710 703 L682 642 L740 639 Z" fill="#000000" opacity="0.45" transform="translate(8 10)"/>
+    <path d="M604 540 L604 700 L648 656 L676 720 L710 703 L682 642 L740 639 Z" fill="#f4fbf8" stroke="#060e0c" stroke-width="14" stroke-linejoin="round"/>
+  </g>
+</svg>

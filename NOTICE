@@ -1,0 +1,24 @@
+Livepage Studio
+Copyright 2026 Livepage Studio contributors
+
+This product includes software developed by the VvvebJs project
+(https://github.com/givanz/VvvebJs), licensed under the Apache License 2.0.
+The editor shell, inspector, chart/backdrop editors, i18n layer and the
+desktop wrapper are original work built on top of that engine.
+
+Bundled third-party libraries (each retains its own license and copyright,
+see the header of each file or its package directory):
+
+  app/libs/builder/*            VvvebJs                    Apache-2.0
+  app/js/bootstrap.min.js       Bootstrap                 MIT
+  app/js/popper.min.js          Popper.js                 MIT
+  app/libs/codemirror/*         CodeMirror                MIT
+  app/libs/coloris/*            Coloris                   MIT
+  app/libs/jszip/*              JSZip                     MIT or GPL-3.0
+  app/libs/swiper/*             Swiper                    MIT
+  app/libs/aos/*                AOS                       MIT
+  app/libs/autocomplete/*       Autocomplete              MIT
+  app/libs/bootstrap-colorpicker/*  Bootstrap Colorpicker MIT
+  app/libs/media/*              VvvebJs media helpers     Apache-2.0
+
+Icon artwork and font credits: see app/Credits.md.

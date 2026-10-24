@@ -1,0 +1,21 @@
+.DS_Store
+node_modules/
+desktop/src-tauri/target/
+dist/
+*.dmg
+*.exe
+
+# local-only assets (do not publish personal or company material)
+app/assets/donate-qr.jpg
+app/sample/*.local.html
+
+# local build config
+desktop/.tauri/
+
+# editor / agent local state
+.idea/
+.omo/
+*.iml
+
+# tool indexes
+.codegraph/

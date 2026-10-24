@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Livepage Studio — Sample Deck</title>
+<style>
+  :root{
+    --ink:#0b1411;
+    --paper:#f6f2e8;
+    --muted:#6b7a72;
+    --line:rgba(20,40,34,.16);
+    --teal:#0f7e71;
+    --teal-l:#1aa596;
+    --amber:#b6782c;
+    --serif:"Iowan Old Style","Palatino Linotype",Georgia,serif;
+    --sans:-apple-system,"SF Pro Text","Segoe UI",Roboto,"Helvetica Neue",sans-serif;
+    --latin:"Optima","Avenir Next",Georgia,serif;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--ink);color:var(--paper);font-family:var(--sans)}
+  body{overflow-x:hidden}
+
+  #plate{position:fixed;inset:0;z-index:0;overflow:hidden}
+  #plate img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .5s ease}
+  #plate img.is-on{opacity:1}
+
+  .story{position:relative;z-index:1}
+  .beat{
+    position:relative;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    padding:96px clamp(32px,7vw,120px);
+    scroll-snap-align:start;
+  }
+  body{scroll-snap-type:y mandatory}
+  .content{width:100%;max-width:920px;margin:0 auto}
+  .eyebrow{
+    font-family:var(--latin);font-size:11px;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--teal-l);margin:0 0 18px
+  }
+  h1,h2{font-family:var(--serif);font-weight:500;letter-spacing:-.01em;margin:0 0 20px;line-height:1.12}
+  h1{font-size:clamp(38px,6vw,72px)}
+  h2{font-size:clamp(28px,4vw,46px)}
+  h2 em{font-style:italic;color:var(--teal-l)}
+  p{font-size:clamp(14px,1.4vw,17px);line-height:1.85;color:#cfc9bb;margin:0 0 16px;max-width:62ch}
+  .lede{font-size:clamp(15px,1.6vw,19px);color:#e6e0d2}
+  .footnote{font-size:12px;color:var(--muted);margin-top:26px}
+
+  .beat-foot{
+    position:absolute;left:clamp(32px,7vw,120px);right:clamp(32px,7vw,120px);bottom:34px;
+    display:flex;justify-content:space-between;font-family:var(--latin);
+    font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:rgba(246,242,232,.4)
+  }
+
+  .grid-2{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}
+  @media (max-width:860px){.grid-2{grid-template-columns:1fr}}
+
+  .card{
+    border:1px solid var(--line);border-radius:16px;padding:22px 24px;
+    background:rgba(255,255,255,.03)
+  }
+  .card b{display:block;font-family:var(--latin);font-size:10px;letter-spacing:.18em;
+    text-transform:uppercase;color:var(--teal-l);margin-bottom:10px}
+  .card p{margin:0;font-size:14px}
+
+  .figure{
+    margin:0;border:1px solid var(--line);border-radius:18px;overflow:hidden;
+    background:rgba(255,255,255,.04)
+  }
+  .figure img{display:block;width:100%;height:auto}
+  .figure figcaption{
+    padding:12px 16px;font-size:11px;letter-spacing:.06em;color:var(--muted);
+    border-top:1px solid var(--line)
+  }
+
+  .chart-wrap{margin-top:8px}
+  .chart-head{
+    display:flex;justify-content:space-between;font-family:var(--latin);
+    font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);
+    margin-bottom:10px
+  }
+  canvas.chart{display:block;width:100%;height:auto;max-height:360px}
+
+  .swatches{display:flex;gap:10px;margin-top:24px;flex-wrap:wrap}
+  .swatches span{
+    font-family:var(--latin);font-size:10px;letter-spacing:.12em;text-transform:uppercase;
+    padding:7px 12px;border:1px solid var(--line);border-radius:999px;color:var(--muted)
+  }
+</style>
+</head>
+<body>
+
+<div id="plate"><img alt=""><img alt=""></div>
+
+<div class="story">
+
+  <section class="beat" id="s-cover" data-chapter="1" data-title="Cover">
+    <div class="content">
+      <p class="eyebrow">Livepage Studio · Sample Deck</p>
+      <h1>Edit a page<br><em>the way you see it</em></h1>
+      <p class="lede">This deck exists so you can try the editor: click any element, drag it, change the type, edit the chart values, swap the image.</p>
+      <p class="footnote">Everything here is sample content. Replace it with your own file via <strong>Open</strong>.</p>
+      <div class="swatches"><span>Click to select</span><span>Drag to move</span><span>Double-click to edit text</span></div>
+    </div>
+    <div class="beat-foot"><span>01</span><span>Cover</span></div>
+  </section>
+
+  <section class="beat" id="s-text" data-chapter="1" data-title="Text & Typography">
+    <div class="content">
+      <p class="eyebrow">01 / Working with text</p>
+      <h2>Typography is a<br><em>direct manipulation</em> problem</h2>
+      <p class="lede">Select a paragraph and the inspector exposes font family, size, weight, colour, line height, letter spacing and alignment. Changes are inline, so they survive the export.</p>
+      <div class="grid-2">
+        <div class="card"><b>Inline styles</b><p>Each edit lands on the element itself — no stylesheet guessing, no selector collisions.</p></div>
+        <div class="card"><b>Undo stack</b><p>Press ⌘Z after any change. Every action is one step, including drags and image swaps.</p></div>
+      </div>
+      <p class="footnote">Try double-clicking this footnote and typing over it.</p>
+    </div>
+    <div class="beat-foot"><span>02</span><span>Text</span></div>
+  </section>
+
+  <section class="beat" id="s-chart" data-chapter="2" data-title="Editable chart">
+    <div class="content">
+      <p class="eyebrow">02 / Data you can touch</p>
+      <h2>Numbers live in<br><em>PPT_DATA</em></h2>
+      <p class="lede">Select the chart, edit the table on the right, and the canvas redraws immediately. Values are written back into the page when you save.</p>
+      <div class="chart-wrap">
+        <div class="chart-head"><span>Sample throughput</span><span>units</span></div>
+        <canvas class="chart" data-ppt="sampleBars" height="260" style="height:260px"></canvas>
+      </div>
+      <p class="footnote">Change a value to see the bars move. This is a canvas, not an image.</p>
+    </div>
+    <div class="beat-foot"><span>03</span><span>Chart</span></div>
+  </section>
+
+  <section class="beat" id="s-image" data-chapter="2" data-title="Image & backdrop">
+    <div class="content">
+      <p class="eyebrow">03 / Assets</p>
+      <h2>Swap an image<br><em>without touching code</em></h2>
+      <p class="lede">Select the picture below and use the Image card. The full-page backdrop can be replaced the same way, per slide.</p>
+      <figure class="figure">
+        <img id="sample-photo" alt="Sample illustration"
+             src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='960' height='420'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%231aa596'/><stop offset='1' stop-color='%230b1411'/></linearGradient></defs><rect width='960' height='420' fill='url(%23g)'/><g fill='none' stroke='%23f6f2e8' stroke-opacity='.55' stroke-width='2'><circle cx='300' cy='210' r='120'/><circle cx='300' cy='210' r='70'/><circle cx='300' cy='210' r='26'/></g><text x='480' y='205' fill='%23f6f2e8' font-family='Georgia,serif' font-size='34'>sample image</text><text x='480' y='244' fill='%23f6f2e8' font-family='Georgia,serif' font-size='18' opacity='.7'>select me, then replace me</text></svg>">
+        <figcaption>Select this image — the inspector shows a Replace image action.</figcaption>
+      </figure>
+    </div>
+    <div class="beat-foot"><span>04</span><span>Image</span></div>
+  </section>
+
+</div>
+
+<script>
+window.PPT_DATA = {
+  sampleBars: {
+    slide: 3,
+    kind: "hBar",
+    title: "Sample throughput",
+    unit: "units",
+    title2: "",
+    items: [
+      { name: "Alpha", value: 128 },
+      { name: "Bravo", value: 96 },
+      { name: "Charlie", value: 74 },
+      { name: "Delta", value: 51 },
+      { name: "Echo", value: 33 }
+    ]
+  }
+};
+
+(function () {
+  const PALETTE = ["#1aa596", "#2fbcae", "#57d0c2", "#8fe3d8", "#c3f1ea"];
+
+  function render(canvas, key, progress) {
+    const data = window.PPT_DATA && window.PPT_DATA[key];
+    if (!canvas || !data || !data.items) return;
+    const dpr = Math.min(2, window.devicePixelRatio || 1);
+    const cssW = canvas.clientWidth || 640;
+    const cssH = canvas.clientHeight || 260;
+    if (canvas.width !== Math.round(cssW * dpr)) {
+      canvas.width = Math.round(cssW * dpr);
+      canvas.height = Math.round(cssH * dpr);
+    }
+    const ctx = canvas.getContext("2d");
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.clearRect(0, 0, cssW, cssH);
+
+    const p = Math.max(0, Math.min(1, progress == null ? 1 : progress));
+    const labelW = 92;
+    const padR = 56;
+    const max = Math.max.apply(null, data.items.map((i) => i.value).concat([1]));
+    const rowH = (cssH - 16) / data.items.length;
+
+    ctx.font = "12px -apple-system, Helvetica, Arial, sans-serif";
+    data.items.forEach((item, index) => {
+      const y = 8 + index * rowH;
+      const barH = Math.max(10, rowH * 0.44);
+      const barY = y + (rowH - barH) / 2;
+      const usable = cssW - labelW - padR;
+      const width = Math.max(2, (item.value / max) * usable * p);
+
+      ctx.fillStyle = "rgba(246,242,232,.62)";
+      ctx.textAlign = "right";
+      ctx.textBaseline = "middle";
+      ctx.fillText(item.name, labelW - 12, barY + barH / 2);
+
+      ctx.fillStyle = PALETTE[index % PALETTE.length];
+      const r = Math.min(barH / 2, 8);
+      const x = labelW;
+      ctx.beginPath();
+      ctx.moveTo(x + r, barY);
+      ctx.arcTo(x + width, barY, x + width, barY + barH, r);
+      ctx.arcTo(x + width, barY + barH, x, barY + barH, r);
+      ctx.arcTo(x, barY + barH, x, barY, r);
+      ctx.arcTo(x, barY, x + width, barY, r);
+      ctx.closePath();
+      ctx.fill();
+
+      ctx.fillStyle = "rgba(246,242,232,.9)";
+      ctx.textAlign = "left";
+      ctx.fillText(String(Math.round(item.value * p)), x + width + 10, barY + barH / 2);
+    });
+  }
+
+  window.PptCharts = { render, keys: Object.keys(window.PPT_DATA) };
+})();
+
+(function () {
+  const tones = [
+    ["#123a34", "#0b1411"],
+    ["#0d2f2a", "#0a1210"],
+    ["#14332c", "#0b1411"],
+    ["#102a26", "#080f0d"]
+  ];
+  window.PLATE_URLS = tones.map(function (pair) {
+    var svg =
+      "<svg xmlns='http://www.w3.org/2000/svg' width='1600' height='900'>" +
+      "<defs><radialGradient id='g' cx='30%' cy='20%' r='90%'>" +
+      "<stop offset='0' stop-color='" + pair[0] + "'/><stop offset='1' stop-color='" + pair[1] + "'/>" +
+      "</radialGradient></defs><rect width='1600' height='900' fill='url(%23g)'/>" +
+      "<circle cx='1180' cy='620' r='300' fill='none' stroke='#1aa596' stroke-opacity='.18' stroke-width='2'/>" +
+      "<circle cx='1180' cy='620' r='180' fill='none' stroke='#1aa596' stroke-opacity='.12' stroke-width='2'/>" +
+      "</svg>";
+    return "data:image/svg+xml;utf8," + svg;
+  });
+
+  const layers = document.querySelectorAll("#plate img");
+  layers.forEach(function (img) {
+    img.src = window.PLATE_URLS[0];
+    img.dataset.index = "0";
+  });
+  layers[0].classList.add("is-on");
+
+  const sections = Array.prototype.slice.call(document.querySelectorAll("section.beat"));
+  let current = -1;
+
+  function show(index) {
+    if (index === current) return;
+    current = index;
+    const next = layers[(index + 1) % layers.length];
+    const prev = layers[index % layers.length];
+    next.src = window.PLATE_URLS[index] || window.PLATE_URLS[0];
+    next.classList.add("is-on");
+    prev.classList.remove("is-on");
+  }
+
+  function nearest() {
+    const mid = window.scrollY + window.innerHeight / 2;
+    let best = 0;
+    let dist = Infinity;
+    sections.forEach(function (section, i) {
+      const top = section.getBoundingClientRect().top + window.scrollY;
+      const d = Math.abs(top + section.offsetHeight / 2 - mid);
+      if (d < dist) { dist = d; best = i; }
+    });
+    return best;
+  }
+
+  window.addEventListener("scroll", function () { show(nearest()); }, { passive: true });
+  window.addEventListener("resize", function () {
+    const bars = document.querySelectorAll("canvas[data-ppt]");
+    bars.forEach(function (canvas) {
+      const key = canvas.dataset.ppt;
+      if (window.PptCharts) window.PptCharts.render(canvas, key, 1);
+    });
+  });
+
+  show(0);
+  const first = document.querySelector("canvas[data-ppt]");
+  if (first) window.PptCharts.render(first, first.dataset.ppt, 1);
+})();
+</script>
+</body>
+</html>

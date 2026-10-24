@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bgE" x1="0" y1="0" x2="0.32" y2="1">
+      <stop offset="0" stop-color="#1cb5a4"/>
+      <stop offset="0.5" stop-color="#0f8375"/>
+      <stop offset="1" stop-color="#085049"/>
+    </linearGradient>
+    <linearGradient id="sheenE" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.24"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="48" y="48" width="928" height="928" rx="224" fill="url(#bgE)"/>
+  <rect x="48" y="48" width="928" height="928" rx="224" fill="url(#sheenE)"/>
+  <rect x="48" y="48" width="928" height="928" rx="224" fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-width="8"/>
+
+  <rect x="292" y="242" width="440" height="540" rx="46" fill="#0b3f3a" opacity="0.34"/>
+  <rect x="282" y="230" width="440" height="540" rx="46" fill="#f7f2e6"/>
+
+  <rect x="342" y="304" width="230" height="30" rx="15" fill="#cfc8b8"/>
+  <rect x="342" y="358" width="140" height="22" rx="11" fill="#dcd5c6"/>
+
+  <rect x="330" y="424" width="344" height="168" rx="26" fill="#e8e2d4"/>
+  <g fill="#9fb0a7">
+    <rect x="356" y="456" width="258" height="20" rx="10"/>
+    <rect x="356" y="492" width="278" height="20" rx="10"/>
+    <rect x="356" y="528" width="198" height="20" rx="10"/>
+  </g>
+  <rect x="330" y="424" width="344" height="168" rx="26" fill="none" stroke="#0b3f3a" stroke-opacity="0.25" stroke-width="9"/>
+  <rect x="330" y="424" width="344" height="168" rx="26" fill="none" stroke="#7ef5e9" stroke-width="9"/>
+
+  <g fill="#cfc8b8">
+    <rect x="342" y="636" width="300" height="20" rx="10"/>
+    <rect x="342" y="674" width="220" height="20" rx="10"/>
+  </g>
+
+  <g>
+    <path d="M588 566 L588 720 L632 678 L660 740 L694 723 L666 662 L724 659 Z" fill="#1b2420" opacity="0.2" transform="translate(8 10)"/>
+    <path d="M588 566 L588 720 L632 678 L660 740 L694 723 L666 662 L724 659 Z" fill="#ffffff" stroke="#0e1412" stroke-width="14" stroke-linejoin="round"/>
+  </g>
+</svg>
