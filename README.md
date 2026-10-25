@@ -241,3 +241,15 @@ Livepage Studio stands on other people's work. The editor exists because VvvebJs
 The engine also ships inline SVG icon sets (Eva, Feather, Themify, Boxicons, Linea, Dripicons and others). Their individual licenses — MIT and CC BY 4.0 — are listed set by set in `app/Credits.md`, alongside `NOTICE`.
 
 Thanks to the VvvebJs maintainers for a genuinely hackable engine, to the Tauri team for a desktop shell that stays small, and to everyone who files an issue on the projects above instead of silently forking. If this tool saves you a round trip to an AI, consider buying one of them a coffee too.
+
+---
+
+## 打赏 · Tip
+
+如果这个工具帮你省下了时间，欢迎打赏一杯咖啡；不打赏也照样好用。
+
+If it saved you some time, feel free to buy me a coffee — it works just as well if you don't.
+
+<img src="app/assets/donate-qr.jpg" width="260" alt="支付宝收款二维码 · Alipay QR">
+
+<sub>支付宝扫码 · 金额随意 · Scan with Alipay · any amount</sub>

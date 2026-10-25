@@ -6,7 +6,6 @@ dist/
 *.exe
 
 # local-only assets (do not publish personal or company material)
-app/assets/donate-qr.jpg
 app/sample/*.local.html
 
 # local build config
