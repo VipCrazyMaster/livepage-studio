@@ -203,3 +203,58 @@ DESIGN.md          设计系统与已知取舍
 ### 开源协议
 
 Apache License 2.0 —— 见 `LICENSE`。第三方声明见 `NOTICE` 与 `app/Credits.md`。
+
+---
+
+## Credits & thanks · 引用与致谢
+
+Livepage Studio stands on other people's work. The editor exists because VvvebJs showed that editing a live DOM in an iframe is the right shape for this problem; the desktop build exists because Tauri made a small native shell practical. Thank you to every maintainer below.
+
+这个工具是站在别人肩膀上的：编辑器的核心思路来自 VvvebJs（把真实页面装进 iframe 改活 DOM），桌面壳能这么轻是因为 Tauri。感谢下面每一位维护者。
+
+### Editor runtime · 编辑器运行时
+
+| Project | License | Link |
+|---|---|---|
+| VvvebJs — visual HTML builder engine | Apache-2.0 | https://github.com/givanz/VvvebJs |
+| Bootstrap 5.3.3 | MIT | https://github.com/twbs/bootstrap |
+| Popper.js | MIT | https://github.com/floating-ui/floating-ui |
+| CodeMirror 5 | MIT | https://github.com/codemirror/codemirror5 |
+| Swiper 11 | MIT | https://github.com/nolimits4web/swiper |
+| JSZip 3.7.1 | MIT / GPL-3.0 | https://github.com/Stuk/jszip |
+| AOS — animate on scroll | MIT | https://github.com/michalsnik/aos |
+| Coloris — colour picker | MIT | https://github.com/melloware/coloris |
+| Bootstrap Colorpicker | MIT | https://github.com/itsjavi/bootstrap-colorpicker |
+
+### Desktop shell · 桌面封装
+
+| Project | License | Link |
+|---|---|---|
+| Tauri v2 | Apache-2.0 / MIT | https://github.com/tauri-apps/tauri |
+| tauri-plugin-dialog, tauri-plugin-fs | Apache-2.0 / MIT | https://github.com/tauri-apps/plugins-workspace |
+| rfd — native file dialogs | MIT | https://github.com/PolyMeilex/rfd |
+| base64 (Rust) | MIT / Apache-2.0 | https://github.com/marshallpierce/rust-base64 |
+| serde · serde_json | MIT / Apache-2.0 | https://github.com/serde-rs/serde |
+
+### Icons & fonts · 图标与字体
+
+| Set | License | Link |
+|---|---|---|
+| Ionicons | MIT | https://github.com/ionic-team/ionicons |
+| Line Awesome | MIT | https://github.com/icons8/line-awesome |
+| Eva Icons | MIT | https://github.com/akveo/eva-icons |
+| Feather | MIT | https://github.com/feathericons/feather |
+| Themify Icons | MIT | https://github.com/lykmapipo/themify-icons |
+| Boxicons | MIT | https://github.com/atisawd/boxicons |
+| Linea | CC BY 4.0 | https://linea.io |
+| Dripicons | CC BY 4.0 | https://github.com/amitjakhu/dripicons |
+
+Full per-file attributions live in `app/Credits.md` and `NOTICE`.
+
+完整的逐文件来源见 `app/Credits.md` 与 `NOTICE`。
+
+### Thanks · 致谢
+
+Thanks to the VvvebJs maintainers for a genuinely hackable engine, to the Tauri team for a desktop shell that stays small, and to everyone who files an issue on the projects above instead of silently forking. If this tool saves you a round trip to an AI, consider buying one of them a coffee too.
+
+感谢 VvvebJs 的维护者做出了一个真正可改的引擎，感谢 Tauri 团队让桌面壳保持轻量，也感谢所有选择提 issue 而不是默默 fork 的人。如果这个工具帮你省下了一次和 AI 的来回，也请顺手给上面某个项目点个 star。
