@@ -1,8 +1,5 @@
 # Livepage Studio
 
-**[Download the desktop app](https://github.com/VipCrazyMaster/livepage-studio/releases/latest)** — macOS `.dmg` (Apple Silicon) and Windows `.exe`
-**［下载桌面版］(https://github.com/VipCrazyMaster/livepage-studio/releases/latest)** — macOS `.dmg`（Apple Silicon）与 Windows `.exe`
-
 <details>
 <summary><b>中文说明（点击展开）</b></summary>
 
