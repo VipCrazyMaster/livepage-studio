@@ -218,7 +218,7 @@ Livepage Studio stands on other people's work. The editor exists because VvvebJs
 |---|---|---|
 | VvvebJs — visual HTML builder engine | Apache-2.0 | https://github.com/givanz/VvvebJs |
 | Bootstrap 5.3.3 | MIT | https://github.com/twbs/bootstrap |
-| Popper.js | MIT | https://github.com/floating-ui/floating-ui |
+| Popper 2.9.2 | MIT | https://github.com/floating-ui/floating-ui |
 | CodeMirror 5 | MIT | https://github.com/codemirror/codemirror5 |
 | Swiper 11 | MIT | https://github.com/nolimits4web/swiper |
 | JSZip 3.7.1 | MIT / GPL-3.0 | https://github.com/Stuk/jszip |
@@ -240,18 +240,12 @@ Livepage Studio stands on other people's work. The editor exists because VvvebJs
 
 | Set | License | Link |
 |---|---|---|
-| Ionicons | MIT | https://github.com/ionic-team/ionicons |
-| Line Awesome | MIT | https://github.com/icons8/line-awesome |
-| Eva Icons | MIT | https://github.com/akveo/eva-icons |
-| Feather | MIT | https://github.com/feathericons/feather |
-| Themify Icons | MIT | https://github.com/lykmapipo/themify-icons |
-| Boxicons | MIT | https://github.com/atisawd/boxicons |
-| Linea | CC BY 4.0 | https://linea.io |
-| Dripicons | CC BY 4.0 | https://github.com/amitjakhu/dripicons |
+| Ionicons (bundled in `app/fonts/ionicons`) | MIT | https://ionic.io/ionicons |
+| Line Awesome (bundled in `app/fonts/line-awesome`) | MIT | https://icons8.com/line-awesome |
 
-Full per-file attributions live in `app/Credits.md` and `NOTICE`.
+The engine also ships inline SVG icon sets (Eva, Feather, Themify, Boxicons, Linea, Dripicons and others). Their individual licenses — MIT and CC BY 4.0 — are listed set by set in `app/Credits.md`, alongside `NOTICE`.
 
-完整的逐文件来源见 `app/Credits.md` 与 `NOTICE`。
+引擎另外内联了若干 SVG 图标集（Eva、Feather、Themify、Boxicons、Linea、Dripicons 等），逐套的许可（MIT 与 CC BY 4.0）列在 `app/Credits.md` 与 `NOTICE` 中。
 
 ### Thanks · 致谢
 
