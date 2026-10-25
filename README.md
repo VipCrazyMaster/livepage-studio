@@ -58,6 +58,8 @@ npx tauri build --bundles nsis        # Windows → setup .exe
 
 Bundles land in `desktop/src-tauri/target/release/bundle/`. The desktop build adds native open/save dialogs and atomic writes, so saving overwrites your file safely instead of downloading a copy.
 
+CI builds both platforms natively (`.github/workflows/build-desktop.yml`) — run it from the Actions tab to get a Windows `.exe` without a Windows machine.
+
 ## How it works
 
 ```
